@@ -1,0 +1,24 @@
+{
+  "latitude": 35.0,
+  "longitude": -97.0,
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "unit": {
+    "description": "Celsius",
+    "label": "°C"
+  },
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 34.2
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 35.1
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 36.2
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "contours": "/daily-evapotranspiration-tall-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-03",
+  "unit": {
+    "description": "Millimeters per day",
+    "label": "mm/day"
+  },
+  "timeSeriesStatistics": {
+    "mean": 4.3,
+    "minimum": 1.0,
+    "maximum": 7.0
+  },
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 4.4,
+      "contours": "/daily-evapotranspiration-tall-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-01",
+      "assetStatistics": {
+        "mean": 4.3,
+        "maximum": 5.0,
+        "minimum": 2.0
+      },
+      "products": [
+        "skywise-24hr-evapotranspiration-tall-crop-analysis"
+      ]
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 3.2,
+      "contours": "/daily-evapotranspiration-tall-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-02&end=2015-06-02",
+      "assetStatistics": {
+        "mean": 4.5,
+        "maximum": 4.9,
+        "minimum": 1.0
+      },
+      "products": [
+        "skywise-24hr-evapotranspiration-tall-crop-analysis"
+      ]
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 3.5,
+      "contours": "/daily-evapotranspiration-tall-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-03&end=2015-06-03",
+      "assetStatistics": {
+        "mean": 4.3,
+        "maximum": 7.0,
+        "minimum": 2.0
+      },
+      "products": [
+        "skywise-24hr-evapotranspiration-tall-crop-analysis"
+      ]
+    }
+  ]
+}

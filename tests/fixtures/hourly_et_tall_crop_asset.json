@@ -1,0 +1,57 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startTime": "2015-06-01T00:00:00Z",
+  "endTime": "2015-06-01T03:00:00Z",
+  "contours": "/hourly-evapotranspiration-short-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-03",
+  "unit": {
+    "description": "Millimeters per hour",
+    "label": "mm/hr"
+  },
+  "timeSeriesStatistics": {
+    "mean": 0.6,
+    "minimum": 0.5,
+    "maximum": 0.7
+  },
+  "series": [
+    {
+      "validTime": "2015-06-01T00:00:00Z",
+      "value": 0.56,
+      "contours": "/hourly-evapotranspiration-short-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-01",
+      "assetStatistics": {
+        "mean": 0.6,
+        "maximum": 0.71,
+        "minimum": 0.63
+      }
+    },
+    {
+      "validTime": "2015-06-01T01:00:00Z",
+      "value": 0.55,
+      "contours": "/hourly-evapotranspiration-short-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-02&end=2015-06-02",
+      "assetStatistics": {
+        "mean": 0.54,
+        "maximum": 0.55,
+        "minimum": 0.54
+      }
+    },
+    {
+      "validTime": "2015-06-01T02:00:00Z",
+      "value": 0.52,
+      "contours": "/hourly-evapotranspiration-short-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-03&end=2015-06-03",
+      "assetStatistics": {
+        "mean": 0.50,
+        "maximum": 0.53,
+        "minimum": 0.42
+      }
+    },
+    {
+      "validTime": "2015-06-01T03:00:00Z",
+      "value": 0.5,
+      "contours": "/hourly-evapotranspiration-short-crop/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-03&end=2015-06-03",
+      "assetStatistics": {
+        "mean": 0.45,
+        "maximum": 0.6,
+        "minimum": 0.5
+      }
+    }
+  ]
+}

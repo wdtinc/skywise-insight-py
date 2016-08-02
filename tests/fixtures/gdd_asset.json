@@ -1,0 +1,49 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "baseTemperature": 10.0,
+  "unit": {
+    "description": "Celsius",
+    "label": "°C"
+  },
+  "degreeDays": 16.7,
+  "accumulationStatistics": {
+    "mean": 15.6,
+    "maximum": 18.1,
+    "minimum": 12.1
+  },
+  "contours": "/growing-degree-days/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-03",
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 5.4,
+      "contours": "/growing-degree-days/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-01",
+      "assetStatistics": {
+        "mean": 5.4,
+        "maximum": 5.5,
+        "minimum": 5.2
+      }
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 5.5,
+      "contours": "/growing-degree-days/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-02&end=2015-06-02",
+      "assetStatistics": {
+        "mean": 5.3,
+        "maximum": 5.4,
+        "minimum": 5.0
+      }
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 5.6,
+      "contours": "/growing-degree-days/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-03&end=2015-06-03",
+      "assetStatistics": {
+        "mean": 5.8,
+        "maximum": 5.9,
+        "minimum": 4.9
+      }
+    }
+  ]
+}

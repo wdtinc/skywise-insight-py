@@ -1,0 +1,33 @@
+{
+  "latitude": 35.482,
+  "longitude": -97.535,
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "unit": {
+    "description": "Millimeters per day",
+    "label": "mm/day"
+  },
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 4.2,
+      "products": [
+        "skywise-24hr-evapotranspiration-tall-crop-analysis"
+      ]
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 5.1,
+      "products": [
+        "skywise-24hr-evapotranspiration-tall-crop-analysis"
+      ]
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 6.2,
+      "products": [
+        "skywise-24hr-evapotranspiration-tall-crop-analysis"
+      ]
+    }
+  ]
+}

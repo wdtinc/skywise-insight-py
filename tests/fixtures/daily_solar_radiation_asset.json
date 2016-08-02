@@ -1,0 +1,48 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "solarRadiation": 164.1,
+  "accumulationStatistics": {
+      "mean": 164.1,
+      "maximum": 166.8,
+      "minimum": 161.9
+  },
+  "unit": {
+    "description": "megajoules",
+    "label": "MJ"
+  },
+  "contours": "/daily-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-03",
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 50.0,
+      "contours": "/daily-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-01",
+      "assetStatistics": {
+        "mean": 51.0,
+        "maximum": 52.0,
+        "minimum": 50.0
+      }
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 50.0,
+      "contours": "/daily-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-02&end=2015-06-02",
+      "assetStatistics": {
+        "mean": 51.0,
+        "maximum": 53.0,
+        "minimum": 49.0
+      }
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 64.1,
+      "contours": "/daily-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-03&end=2015-06-03",
+      "assetStatistics": {
+        "mean": 64.9,
+        "maximum": 67.0,
+        "minimum": 61.0
+      }
+    }
+  ]
+}

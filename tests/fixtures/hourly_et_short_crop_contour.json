@@ -1,0 +1,35 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "validTime": "2015-06-01T00:00:00Z",
+  "unit": {
+    "description": "Millimeters per hour",
+    "label": "mm/hr"
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [ [-102.3555, 39.8420], [-99.8945, 39.8420]]
+        ]
+      },
+      "properties": {
+        "evapotranspiration": 0.34
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [ [-102.3555, 39.8420], [-99.8945, 39.8420]]
+        ]
+      },
+      "properties": {
+        "evapotranspiration": 0.47
+      }
+    }
+  ]
+}

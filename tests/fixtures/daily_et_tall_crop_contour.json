@@ -1,0 +1,35 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "validDate": "2015-06-01",
+  "unit": {
+    "description": "Millimeters per day",
+    "label": "mm/day"
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [ [-102.3555, 39.8420], [-99.8945, 39.8420]]
+        ]
+      },
+      "properties": {
+        "evapotranspiration": 7.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [ [-102.3555, 39.8420], [-99.8945, 39.8420]]
+        ]
+      },
+      "properties": {
+        "evapotranspiration": 4.0
+      }
+    }
+  ]
+}
