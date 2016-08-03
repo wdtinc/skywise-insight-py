@@ -3,12 +3,12 @@ from setuptools import setup
 
 setup(
     name='skywise-insight',
-    version='1.0.0',
+    version='1.0.2',
     package_data={'': ['README.md']},
     packages=['skywiseinsight'],
     install_requires=[
-        'skywise-rest-client==1.0.0',
-        'voluptuous==0.8.8'
+        'skywise-rest-client>=1.0.1',
+        'voluptuous=>0.8.8'
     ],
 
     # metadata for upload to PyPI
