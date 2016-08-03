@@ -5,9 +5,9 @@ from skywiserestclient import SkyWiseJSON, SkyWiseResource
 class InsightResource(SkyWiseJSON, SkyWiseResource):
     pass
 
-_site = os.getenv('PSW_INSIGHT_SITE', 'http://insight.api.wdtinc.com')
-_user = os.getenv('PSW_INSIGHT_USER', '')
-_password = os.getenv('PSW_INSIGHT_PASSWORD', '')
+_site = os.getenv('SKYWISE_INSIGHT_SITE', 'http://insight.api.wdtinc.com')
+_user = os.getenv('SKYWISE_INSIGHT_APP_ID', '')
+_password = os.getenv('SKYWISE_INSIGHT_APP_KEY', '')
 
 InsightResource.set_site(_site)
 InsightResource.set_user(_user)
@@ -32,3 +32,8 @@ from skywiseinsight.daily_et_tall_crop import DailyEtTallCrop
 from skywiseinsight.hourly_et_short_crop import HourlyEtShortCrop
 from skywiseinsight.hourly_et_tall_crop import HourlyEtTallCrop
 from skywiseinsight.asset import Asset
+
+__all__ = [Asset, Cdd, Gdd, Hdd, DailyLowTemperature, DailyHighTemperature, DailyPrecipitation,
+           DailySolarRadiation, HourlySolarRadiation, HourlyTemperature, HourlyDewpoint,
+           HourlyWindSpeed, HourlyWindDirection, HourlyRelativeHumidity, DailyEtShortCrop,
+           DailyEtTallCrop, HourlyEtShortCrop, HourlyEtTallCrop]
