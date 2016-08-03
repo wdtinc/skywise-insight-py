@@ -29,7 +29,7 @@ Otherwise, you'll need to set your App ID/Key explicitly in your app/script befo
 from skywiseinsight import InsightResource
 
 InsightResource.set_user('{YOUR_APP_ID}')
-InsightResource.set_password('{YOUR_APP_KEY')
+InsightResource.set_password('{YOUR_APP_KEY}')
 ```
 
 ## Try It Out
