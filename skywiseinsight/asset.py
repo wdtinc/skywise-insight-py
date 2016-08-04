@@ -1,4 +1,4 @@
-from voluptuous import Any, Schema
+from voluptuous import Any, Optional, Schema
 from skywiserestclient.validation import latitude, longitude, multipolygon, polygon
 
 from skywiseinsight import InsightResource
@@ -34,7 +34,20 @@ class Asset(InsightResource):
         self.type = 'GeometryCollection'
         self.geometries = []
 
+    def __getattr__(self, name):
+        if name == 'shape':
+            return self._data['geometries'][0]
+        return super(Asset, self).__getattr__(name)
+
+    def __setattr__(self, name, value):
+        if name == 'shape':
+            self.add_geometry(value)
+        else:
+            super(Asset, self).__setattr__(name, value)
+
     def add_geometry(self, g):
+        """ Deprecated. Used for backwards-compatibility only. Use
+            `asset.shape = geometry` instead. """
         if g.type == 'MultiPolygon':
             self._add_mp(g)
         elif g.type == 'Polygon':
