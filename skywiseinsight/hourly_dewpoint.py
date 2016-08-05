@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight.hourly_dewpoint
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Implementation of the Hourly Dewpoint resource.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from voluptuous import Any
 
 from ._hourly_resource import (HourlyResourceLocation,

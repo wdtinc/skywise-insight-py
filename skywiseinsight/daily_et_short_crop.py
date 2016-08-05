@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight.daily_et_short_crop
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Implementation of the Daily ET Short Crop resource.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from voluptuous import Any
 
 from ._daily_resource import (DailyResourceLocation,

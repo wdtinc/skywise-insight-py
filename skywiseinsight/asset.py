@@ -1,4 +1,13 @@
-from voluptuous import Any, Optional, Schema
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight.asset
+    ~~~~~~~~~~~~~~~~~~~~
+    Implementation of the Asset resource.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
+from voluptuous import Any, Schema
 from skywiserestclient.validation import latitude, longitude, multipolygon, polygon
 
 from skywiseinsight import InsightResource
@@ -9,7 +18,24 @@ class UnsupportedGeometryException(Exception):
 
 
 class Asset(InsightResource):
+    """ The Asset class implements the schemas and validation required
+    to CRUD asset objects::
 
+        from geojson import Polygon
+        from skywiseinsight import Asset
+
+        asset = Asset()
+        asset.description = "My area of interest."
+        asset.shape = Polygon([[
+          [-109.3359375, 38.272688535980976],
+          [-109.3359375, 42.553080288955826],
+          [-99.84374999999999, 42.553080288955826],
+          [-99.84374999999999, 38.272688535980976],
+          [-109.3359375, 38.272688535980976]
+        ]])
+        asset.save()
+
+    """
     _path = "/assets"
 
     _deserialize = Schema({
@@ -45,9 +71,8 @@ class Asset(InsightResource):
         else:
             super(Asset, self).__setattr__(name, value)
 
-    def add_geometry(self, g):
-        """ Deprecated. Used for backwards-compatibility only. Use
-            `asset.shape = geometry` instead. """
+    def add_geometry(self, geometry):
+        g = geometry
         if g.type == 'MultiPolygon':
             self._add_mp(g)
         elif g.type == 'Polygon':

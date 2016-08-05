@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight.hourly_wind_speed
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Implementation of the Hourly Wind Speed resource.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from voluptuous import Any
 
 from ._hourly_resource import (HourlyResourceLocation,

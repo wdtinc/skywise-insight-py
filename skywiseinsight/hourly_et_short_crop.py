@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight.hourly_et_short_crop
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Implementation of the Hourly ET Short Crop resource.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from voluptuous import Any
 
 from ._hourly_resource import (HourlyResourceLocation,

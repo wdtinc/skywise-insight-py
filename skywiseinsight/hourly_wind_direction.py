@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight.hourly_wind_direction
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Implementation of the Hourly Wind Direction resource.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from skywiserestclient.validation import datetime, datetime_to_str
 
 from ._hourly_resource import (HourlyResourceLocation,
