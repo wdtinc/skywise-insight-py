@@ -1,5 +1,7 @@
 # Overview
-A Python client library for the SkyWise Insight API. Check out [the API docs](http://docs.api.wdtinc.com/insight-api/en/latest/overview.html) to reference exposed endpoints.
+A Python client library for the SkyWise Insight API. For more detailed 
+usage info, check out the [client API reference](http://docs.api.wdtinc.com/insight-api/en/latest/overview.html) 
+to see all Insight API resources that the client library exposes.
 
 ## Prerequisites
 
@@ -32,21 +34,19 @@ InsightResource.set_user('{YOUR_APP_ID}')
 InsightResource.set_password('{YOUR_APP_KEY}')
 ```
 
+> **API Signup**
+> If you don't already have an app id and key, [sign up](http://skywise.wdtinc.com) for a free demo account.
+
 ## Try It Out
 Let's test out our install by requesting the latest Daily Precipitation data for OKC:
 
 ```python
-import json
-from skywiseinsight import DailyPrecipitation as dp
+>>> import json
+>>> from skywiseinsight import DailyPrecipitation as dp
 
-precip = dp.location(35.4, -97.5)
-print json.dumps(precip.json())
-```
-
-Your output should look something similar to this:
-
-```bash
-{
+>>> precip = dp.location(35.4, -97.5)
+>>> precip.json()
+ {
    "startDate":"2016-08-03",
    "endDate":"2016-08-08",
    "series":[
@@ -82,5 +82,18 @@ Your output should look something similar to this:
       "description":"millimeters",
       "label":"mm"
    }
-}
+ }
 ```
+
+The `json()` method will output the response as it was returned 
+from the API. You can also access response attributes directly and benefit
+from on the fly deserialization of response values to Python types 
+such as date/datetime:
+
+```python
+>>> okc_precip.startDate
+datetime.date(2016, 8, 5)
+>>> okc_precip.startDate > okc_precip.endDate
+True
+```
+

@@ -16,14 +16,27 @@ from ._hourly_resource import (HourlyResourceLocation,
 class HourlyWindDirection(object):
 
     @classmethod
-    def location(cls, lat, lon, start=None, end=None, unit=None, **kwargs):
+    def location(cls, lat, lon, start=None, end=None, **kwargs):
+        """Retrieves Hourly Wind Direction time series data for a specified point.
+
+        :ivar float lat: Latitude
+        :ivar float lon: Longitude
+        :ivar datetime start: Start of your query.
+        :ivar datetime end: End of your query.
+        """
         return _HourlyWindDirectionByLocation.find(latitude=lat, longitude=lon,
-                                                   start=start, end=end, unit=unit, **kwargs)
+                                                   start=start, end=end, **kwargs)
 
     @classmethod
-    def asset(cls, asset_uuid, start=None, end=None, unit=None, **kwargs):
+    def asset(cls, asset_uuid, start=None, end=None, **kwargs):
+        """Retrieves Hourly Wind Direction areal statistics and time series data for the specified asset.
+
+        :ivar string asset_uuid: Asset UUID
+        :ivar datetime start: Start of your query.
+        :ivar datetime end: End of your query.
+        """
         return _HourlyWindDirectionByAsset.find(asset_uuid=asset_uuid, start=start, end=end,
-                                                unit=unit, **kwargs)
+                                                **kwargs)
 
 
 class _HourlyWindDirectionByLocation(HourlyResourceLocation):

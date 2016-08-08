@@ -3,186 +3,70 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. _api:
-
 API Reference
 -------------
 
-Configuration
-=============
+Welcome to the API reference for `skywise-insight-py
+<https://github.com/wdtinc/skywise-insight-py>`_, the Python client library for
+the `Insight API
+<http://docs.api.wdtinc.com/insight-api/en/latest/overview.html>`_.
 
-Configuration of the client's App ID and Key can be made directly to the `InsightResource` base-class.
+.. toctree::
+    :maxdepth: 1
+    :caption: Getting Started
 
-.. autoclass:: skywiseinsight.InsightResource
-   :members:
+    configuration
+    resources
+    assets
 
-Assets
-======
+.. toctree::
+    :maxdepth: 1
+    :caption: Degree Days
 
-.. autoclass:: skywiseinsight.Asset
-   :members:
+    cooling-degree-days
+    growing-degree-days
+    heating-degree-days
 
-Asset objects expose the following attributes:
+.. toctree::
+    :maxdepth: 1
+    :caption: Precipitation
 
-   .. attribute:: description
+    daily-precipitation
+    hourly-precipitation
 
-      A string describing your asset.
+.. toctree::
+   :maxdepth: 1
+   :caption: Relative Humidity
 
-   .. attribute:: shape
+   hourly-relative-humidity
 
-      A valid geojson `Polygon <https://pypi.python.org/pypi/geojson/#polygon>`_ object.
+.. toctree::
+   :maxdepth: 1
+   :caption: Solar Radiation
 
-Resources
-=========
+   daily-solar-radiation
+   hourly-solar-radiation
 
-Insight resources are lightweight wrappers around the API's endpoints. After
-making a call to the API, you can invoke the `json()` method to retrieve all
-values. The structure of this object should match the response examples given
-in the [HTTP API docs]()::
+.. toctree::
+   :maxdepth: 1
+   :caption: Temperature
 
-    >>> from skywiseinsight import DailyPrecipitation as DP
-    >>> okc_precip = DP.location(35, -97)
-    >>> okc_precip.json()
+   daily-high-temperature
+   daily-low-temperature
+   hourly-temperature
 
-    {
-      u'startDate':u'2016-08-05',
-      u'endDate':u'2016-08-10',
-      u'series':[
-         {
-            u'validDate':u'2016-08-10',
-            u'value':0.3
-         },
-         {
-            u'validDate':u'2016-08-09',
-            u'value':0.7
-         },
-         {
-            u'validDate':u'2016-08-08',
-            u'value':0.2
-         },
-         {
-            u'validDate':u'2016-08-07',
-            u'value':0.7
-         },
-         {
-            u'validDate':u'2016-08-06',
-            u'value':2.0
-         },
-         {
-            u'validDate':u'2016-08-05',
-            u'value':0.7
-         }
-      ],
-      u'longitude':-97.0,
-      u'latitude':35.0,
-      u'precipitation':4.6,
-      u'unit':{
-         u'description':u'millimeters',
-         u'label':u'mm'
-      }
-    }
+.. toctree::
+   :maxdepth: 1
+   :caption: Wind
 
-Top-level attributes can be accessed directly::
+   hourly-wind-direction
+   hourly-wind-speed
 
-    >>> okc_precip.longitude
-    -97.0
-    >>> okc_precip.startDate
-    datetime.date(2016, 8, 5)
-    >>> [item['value'] for item in okc.series]
-    [0.3, 0.7, 0.2, 0.7, 2.0, 0.7]
+.. toctree::
+   :maxdepth: 1
+   :caption: Evapotranspiration
 
-Notice that all dates/datetimes JSON strings are automatically deserialized for you when accessed directly.
-
------------
-Degree Days
------------
-
-----
-
-.. autoclass:: skywiseinsight.Cdd
-   :members:
-
-.. autoclass:: skywiseinsight.Gdd
-   :members:
-
-.. autoclass:: skywiseinsight.Hdd
-   :members:
-
--------------
-Precipitation
--------------
-
-----
-
-.. autoclass:: skywiseinsight.DailyPrecipitation
-   :members:
-
-.. autoclass:: skywiseinsight.HourlyPrecipitation
-   :members:
-
------------------
-Relative Humidity
------------------
-
-----
-
-.. autoclass:: skywiseinsight.HourlyRelativeHumidity
-   :members:
-
----------------
-Solar Radiation
----------------
-
-----
-
-.. autoclass:: skywiseinsight.DailySolarRadiation
-   :members:
-
-.. autoclass:: skywiseinsight.HourlySolarRadiation
-   :members:
-
------------
-Temperature
------------
-
-----
-
-.. autoclass:: skywiseinsight.HourlyTemperature
-   :members:
-
-.. autoclass:: skywiseinsight.DailyHighTemperature
-   :members:
-
-.. autoclass:: skywiseinsight.DailyLowTemperature
-   :members:
-
-----
-Wind
-----
-
-----
-
-.. autoclass:: skywiseinsight.HourlyWindSpeed
-   :members:
-
-.. autoclass:: skywiseinsight.HourlyWindDirection
-   :members:
-
-------------------
-Evapotranspiration
-------------------
-
-----
-
-.. autoclass:: skywiseinsight.DailyEtShortCrop
-   :members:
-
-.. autoclass:: skywiseinsight.DailyEtTallCrop
-   :members:
-
-.. autoclass:: skywiseinsight.HourlyEtShortCrop
-   :members:
-
-.. autoclass:: skywiseinsight.HourlyEtTallCrop
-   :members:
-
+   daily-et-short-crop
+   daily-et-tall-crop
+   hourly-et-short-crop
+   hourly-et-tall-crop

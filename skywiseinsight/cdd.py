@@ -11,8 +11,7 @@ from ._degree_days_resource import DegreeDaysByLocation, DegreeDaysByAsset, Degr
 
 
 class Cdd(object):
-    """**Cooling Degree Days** resource implementation.
-    """
+
     @classmethod
     def location(cls, lat, lon, start=None, end=None, base=None, unit=None, **kwargs):
         """Retrieves CDD time series data for a specified point.

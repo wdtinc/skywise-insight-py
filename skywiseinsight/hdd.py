@@ -14,7 +14,7 @@ class Hdd(object):
 
     @classmethod
     def location(cls, lat, lon, start=None, end=None, base=None, unit=None, **kwargs):
-        """Retrieves CDD time series data for a specified point.
+        """Retrieves HDD time series data for a specified point.
 
         :ivar float lat: Latitude
         :ivar float lon: Longitude
@@ -28,7 +28,7 @@ class Hdd(object):
 
     @classmethod
     def asset(cls, asset_uuid, start=None, end=None, base=None, unit=None, **kwargs):
-        """Retrieves CDD areal statistics and time series data for the specified asset.
+        """Retrieves HDD areal statistics and time series data for the specified asset.
 
         :ivar string asset_uuid: Asset UUID
         :ivar datetime start: Start of your query.
@@ -41,7 +41,7 @@ class Hdd(object):
 
     @classmethod
     def contours(self, asset_uuid, start=None, end=None, base=None, unit=None, **kwargs):
-        """Retrieves CDD contour data for the specified asset.
+        """Retrieves HDD contour data for the specified asset.
 
         :ivar string asset_uuid: Asset UUID
         :ivar datetime start: Start of your query.
