@@ -1,6 +1,6 @@
 # Overview
 A Python client library for the SkyWise Insight API. For more detailed 
-usage info, check out the [client API reference](http://docs.api.wdtinc.com/insight-api/en/latest/overview.html) 
+usage info, check out the [client API reference](http://docs.api.wdtinc.com/skywise-insight-py/en/latest/) 
 to see all Insight API resources that the client library exposes.
 
 ## Prerequisites
