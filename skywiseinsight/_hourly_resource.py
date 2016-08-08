@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight._hourly_resource
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Base class containing schemas for hourly resource types.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from voluptuous import Any, Schema
 from skywiserestclient.validation import (datetime, datetime_to_str, latitude, longitude,
                                           polygon, multipolygon)

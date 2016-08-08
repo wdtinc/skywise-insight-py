@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight.hourly_relative_humidity
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Implementation of the Hourly Relative Humidity resource.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from ._hourly_resource import (HourlyResourceLocation,
                                HourlyTimeSeriesResourceAsset,
                                HourlyResourceContourByValidTime)
@@ -6,19 +15,37 @@ from ._hourly_resource import (HourlyResourceLocation,
 class HourlyRelativeHumidity(object):
 
     @classmethod
-    def location(cls, lat, lon, start=None, end=None, unit=None, **kwargs):
+    def location(cls, lat, lon, start=None, end=None, **kwargs):
+        """Retrieves Hourly Relative Humidity time series data for a specified point.
+
+        :ivar float lat: Latitude
+        :ivar float lon: Longitude
+        :ivar datetime start: Start of your query.
+        :ivar datetime end: End of your query.
+        """
         return _HourlyRHByLocation.find(latitude=lat, longitude=lon,
-                                        start=start, end=end, unit=unit, **kwargs)
+                                        start=start, end=end, **kwargs)
 
     @classmethod
-    def asset(cls, asset_uuid, start=None, end=None, unit=None, **kwargs):
+    def asset(cls, asset_uuid, start=None, end=None, **kwargs):
+        """Retrieves Hourly Relative Humidity areal statistics and time series data for the specified asset.
+
+        :ivar string asset_uuid: Asset UUID
+        :ivar datetime start: Start of your query.
+        :ivar datetime end: End of your query.
+        """
         return _HourlyRHByAsset.find(asset_uuid=asset_uuid, start=start, end=end,
-                                     unit=unit, **kwargs)
+                                     **kwargs)
 
     @classmethod
-    def contours(cls, asset_uuid, start=None, end=None, unit=None, **kwargs):
-        return _HourlyRHContours.find(asset_uuid=asset_uuid, validTime=end,
-                                      unit=unit, **kwargs)
+    def contours(cls, asset_uuid, valid_time=None, **kwargs):
+        """Retrieves Hourly Relative Humidity contour data for the specified asset.
+
+        :ivar string asset_uuid: Asset UUID
+        :ivar datetime valid_time: The datetime you're requesting contours for.
+        """
+        return _HourlyRHContours.find(asset_uuid=asset_uuid, validTime=valid_time,
+                                      **kwargs)
 
 
 class _HourlyRHByLocation(HourlyResourceLocation):

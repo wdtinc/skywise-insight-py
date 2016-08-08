@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight._daily_resource
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Base class containing schemas for daily resource types.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from voluptuous import Any, Optional, Schema
 from skywiserestclient.validation import date, date_to_str, latitude, longitude, polygon, multipolygon
 

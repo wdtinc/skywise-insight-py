@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    skywiseinsight._degree_days_resource
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Base class containing schemas for XDD resource types.
+
+    :copyright: (c) 2016 by WDT Inc.
+    :license: MIT, see LICENSE for more details.
+"""
 from voluptuous import Any
 from skywiserestclient.validation import temp_to_str
 
