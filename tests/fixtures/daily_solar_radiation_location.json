@@ -1,0 +1,25 @@
+{
+  "latitude": 35.482,
+  "longitude": -97.535,
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "solarRadiation": 164.1,
+  "unit": {
+    "description": "megajoules",
+    "label": "MJ"
+  },
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 50.0
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 50.0
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 64.1
+    }
+  ]
+}

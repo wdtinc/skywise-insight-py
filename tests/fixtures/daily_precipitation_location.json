@@ -1,0 +1,25 @@
+{
+  "latitude": 35.0,
+  "longitude": -97.0,
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "precipitation": 22.5,
+  "unit": {
+    "description": "millimeters",
+    "label": "mm"
+  },
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 11.25
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 5.25
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 6.0
+    }
+  ]
+}

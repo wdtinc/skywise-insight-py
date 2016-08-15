@@ -1,0 +1,48 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "precipitation": 22.5,
+  "accumulationStatistics": {
+     "mean": 21.5,
+     "maximum": 27.6,
+     "minimum": 19.4
+  },
+  "unit": {
+    "description": "millimeters",
+    "label": "mm"
+  },
+  "contours": "/daily-precipitation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-03",
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 11.25,
+      "contours": "/daily-precipitation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-01",
+      "assetStatistics": {
+        "mean": 10.2,
+        "maximum": 11.5,
+        "minimum": 9.6
+      }
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 11.0,
+      "contours": "/daily-precipitation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-02&end=2015-06-02",
+      "assetStatistics": {
+        "mean": 10.5,
+        "maximum": 11.7,
+        "minimum": 9.4
+      }
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 10.0,
+      "contours": "/daily-precipitation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-03&end=2015-06-03",
+      "assetStatistics": {
+        "mean": 10.6,
+        "maximum": 12.5,
+        "minimum": 8.6
+      }
+    }
+  ]
+}

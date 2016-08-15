@@ -1,0 +1,47 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startDate": "2015-06-01",
+  "endDate": "2015-06-03",
+  "contours": "/daily-low-temperature/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-03",
+  "unit": {
+    "description": "Celsius",
+    "label": "°C"
+  },
+  "timeSeriesStatistics": {
+    "mean": 34.3,
+    "minimum": 31.0,
+    "maximum": 37.0
+  },
+  "series": [
+    {
+      "validDate": "2015-06-01",
+      "value": 34.4,
+      "contours": "/daily-low-temperature/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01&end=2015-06-01",
+      "assetStatistics": {
+        "mean": 34.3,
+        "maximum": 35.0,
+        "minimum": 32.0
+      }
+    },
+    {
+      "validDate": "2015-06-02",
+      "value": 33.2,
+      "contours": "/daily-low-temperature/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-02&end=2015-06-02",
+      "assetStatistics": {
+        "mean": 34.5,
+        "maximum": 34.9,
+        "minimum": 31.0
+      }
+    },
+    {
+      "validDate": "2015-06-03",
+      "value": 33.5,
+      "contours": "/daily-low-temperature/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-03&end=2015-06-03",
+      "assetStatistics": {
+        "mean": 34.3,
+        "maximum": 37.0,
+        "minimum": 32.0
+      }
+    }
+  ]
+}

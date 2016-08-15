@@ -1,0 +1,47 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startTime": "2015-06-01T00:00:00Z",
+  "endTime": "2015-06-01T03:00:00Z",
+  "timeSeriesStatistics": {
+    "mean": 52.0,
+    "maximum": 63.0,
+    "minimum": 47.0
+  },
+  "unit": {
+    "description": "Watts per square meter",
+    "label": "W/m²"
+  },
+  "contours": "/hourly-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?start=2015-06-01T00:00:00Z&end=2015-06-01T03:00:00Z",
+  "series": [
+    {
+      "validTime": "2015-06-01T01:00:00Z",
+      "value": 14.5,
+      "contours": "/hourly-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?validTime=2015-06-01T00:00:00Z",
+      "assetStatistics": {
+        "mean": 15.0,
+        "maximum": 16.0,
+        "minimum": 14.0
+      }
+    },
+    {
+      "validTime": "2015-06-01T02:00:00Z",
+      "value": 12.0,
+      "contours": "/hourly-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?validTime=2015-06-01T01:00:00Z",
+      "assetStatistics": {
+        "mean": 10.0,
+        "maximum": 13.0,
+        "minimum": 8.0
+      }
+    },
+    {
+      "validTime": "2015-06-01T03:00:00Z",
+      "value": 30.0,
+      "contours": "/hourly-solar-radiation/fe68c33d-e718-4449-acae-351072ce7749/contours?validTime=2015-06-01T02:00:00Z",
+      "assetStatistics": {
+        "mean": 29.0,
+        "maximum": 34.0,
+        "minimum": 25.0
+      }
+    }
+  ]
+}
