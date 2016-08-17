@@ -1,2 +1,4 @@
+skywise-rest-client==1.0.2
 nose==1.3.7
 requests-mock==0.7.0
+requests>=2.9.1
