@@ -6,4 +6,4 @@ A list of changes for each release.
 Version 1.0.6
 -------------
 
-- Initial tagged release.
+- Initial tagged release. Original library along with Travis CI integration.
