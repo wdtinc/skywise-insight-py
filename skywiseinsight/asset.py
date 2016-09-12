@@ -34,6 +34,19 @@ class Asset(InsightResource):
         self.type = 'GeometryCollection'
         self.geometries = []
 
+    def __getattr__(self, name):
+        if name == 'shape':
+            return self._data['geometries'][0]
+        else:
+            return super(Asset, self).__getattr__(name)
+
+    def __setattr__(self, name, value):
+        if name == 'shape':
+            del self._data['geometries'][:]
+            self._data['geometries'].append(value)
+        else:
+            return super(Asset, self).__setattr__(name, value)
+
     def add_geometry(self, g):
         if g.type == 'MultiPolygon':
             self._add_mp(g)
