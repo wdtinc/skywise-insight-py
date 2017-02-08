@@ -1,0 +1,33 @@
+{
+  "latitude": 35.482,
+  "longitude": -97.535,
+  "startDate": "06-01",
+  "endDate": "06-03",
+  "unit": {
+    "description": "degrees celsius",
+    "label": "°C"
+  },
+  "series": [
+    {
+      "validDate": "06-01",
+      "value": 34.2,
+      "products": [
+        "skywise-global-30yr-daily-temperature-max"
+      ]
+    },
+    {
+      "validDate": "06-02",
+      "value": 35.1,
+      "products": [
+        "skywise-global-30yr-daily-temperature-max"
+      ]
+    },
+    {
+      "validDate": "06-03",
+      "value": 36.2,
+      "products": [
+        "skywise-global-30yr-daily-temperature-max"
+      ]
+    }
+  ]
+}
