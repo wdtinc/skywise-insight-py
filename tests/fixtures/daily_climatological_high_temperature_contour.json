@@ -1,0 +1,36 @@
+{
+  "asset": "/assets/fe68c33d-e718-4449-acae-351072ce7749",
+  "startDate": "06-01",
+  "endDate": "06-03",
+  "unit": {
+    "description": "degrees celsius",
+    "label": "°C"
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [ [-102.3555, 39.8420], [-99.8945, 39.8420], [-102.3555, 39.8420]]
+        ]
+      },
+      "properties": {
+        "highTemperature": 37.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [ [-102.3555, 39.8420], [-99.8945, 39.8420], [-102.3555, 39.8420]]
+        ]
+      },
+      "properties": {
+        "highTemperature": 34.0
+      }
+    }
+  ]
+}
