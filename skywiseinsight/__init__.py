@@ -16,6 +16,9 @@ InsightResource.set_password(_password)
 from skywiseinsight.cdd import Cdd
 from skywiseinsight.gdd import Gdd
 from skywiseinsight.hdd import Hdd
+from skywiseinsight.daily_climatological_precipitation import DailyClimatologicalPrecipitation
+from skywiseinsight.daily_climatological_high_temperature import DailyClimatologicalHighTemperature
+from skywiseinsight.daily_climatological_low_temperature import DailyClimatologicalLowTemperature
 from skywiseinsight.daily_low_temperature import DailyLowTemperature
 from skywiseinsight.daily_high_temperature import DailyHighTemperature
 from skywiseinsight.daily_precipitation import DailyPrecipitation
@@ -36,4 +39,5 @@ from skywiseinsight.asset import Asset
 __all__ = [Asset, Cdd, Gdd, Hdd, DailyLowTemperature, DailyHighTemperature, DailyPrecipitation,
            DailySolarRadiation, HourlySolarRadiation, HourlyTemperature, HourlyDewpoint,
            HourlyWindSpeed, HourlyWindDirection, HourlyRelativeHumidity, DailyEtShortCrop,
-           DailyEtTallCrop, HourlyEtShortCrop, HourlyEtTallCrop]
+           DailyEtTallCrop, HourlyEtShortCrop, HourlyEtTallCrop, DailyClimatologicalPrecipitation,
+           DailyClimatologicalHighTemperature, DailyClimatologicalLowTemperature]

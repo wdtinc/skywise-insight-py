@@ -3,11 +3,11 @@ from setuptools import setup
 
 setup(
     name='skywise-insight',
-    version='1.0.6',
+    version='1.0.7',
     package_data={'': ['README.md']},
     packages=['skywiseinsight'],
     install_requires=[
-        'skywise-rest-client>=1.0.1',
+        'skywise-rest-client>=1.0.7',
         'voluptuous>=0.8.8'
     ],
 
