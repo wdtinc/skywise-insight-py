@@ -38,7 +38,8 @@ class HourlyResourceLocation(HourlyResource):
         'longitude': longitude,
         'series': [{
             'value': float,
-            'validTime': datetime
+            'validTime': datetime,
+            'products': [unicode]
         }]
     })
 
@@ -47,7 +48,8 @@ class HourlyResourceLocation(HourlyResource):
         'longitude': longitude,
         'series': [{
             'value': float,
-            'validTime': datetime_to_str
+            'validTime': datetime_to_str,
+            'products': [unicode]
         }]
     })
 
@@ -69,7 +71,8 @@ class HourlyTimeSeriesResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 
@@ -88,7 +91,8 @@ class HourlyTimeSeriesResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 
@@ -111,7 +115,8 @@ class HourlyAccumulationResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 
@@ -131,7 +136,8 @@ class HourlyAccumulationResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 

@@ -11,7 +11,8 @@ class ClimatologyResourceLocation(DailyResourceLocation):
         'endDate': Any(str, unicode),
         'series': [{
             'value': float,
-            'validDate': Any(str, unicode)
+            'validDate': Any(str, unicode),
+            'products': [unicode]
         }]
     })
 
@@ -20,7 +21,8 @@ class ClimatologyResourceLocation(DailyResourceLocation):
         'endDate': Any(str, unicode),
         'series': [{
             'value': float,
-            'validDate': Any(str, unicode)
+            'validDate': Any(str, unicode),
+            'products': [unicode]
         }]
     })
 
@@ -44,7 +46,8 @@ class ClimatologyResourceAsset(DailyResourceAsset):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 
@@ -59,7 +62,8 @@ class ClimatologyResourceAsset(DailyResourceAsset):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 

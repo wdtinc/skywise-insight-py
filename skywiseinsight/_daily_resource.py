@@ -37,7 +37,9 @@ class DailyResourceLocation(DailyResource):
         'longitude': longitude,
         'series': [{
             'value': float,
-            'validDate': date
+            'validDate': date,
+            'products': [unicode]
+
         }]
     })
 
@@ -46,7 +48,8 @@ class DailyResourceLocation(DailyResource):
         'longitude': longitude,
         'series': [{
             'value': float,
-            'validDate': date_to_str
+            'validDate': date_to_str,
+            'products': [unicode]
         }]
     })
 
@@ -64,7 +67,8 @@ class DailyResourceAsset(DailyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 
@@ -79,7 +83,8 @@ class DailyResourceAsset(DailyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            'products': [unicode]
         }]
     })
 
