@@ -18,7 +18,6 @@ setup(
     url='https://github.com/wdtinc/skywise-insight-py',
     zip_safe=False,
     classifiers=(
-        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Programming Language :: Python',
