@@ -1,4 +1,4 @@
-from voluptuous import Any, Schema
+from voluptuous import Any, Schema, Optional
 from skywiserestclient.validation import (datetime, datetime_to_str, latitude, longitude,
                                           polygon, multipolygon)
 
@@ -38,7 +38,8 @@ class HourlyResourceLocation(HourlyResource):
         'longitude': longitude,
         'series': [{
             'value': float,
-            'validTime': datetime
+            'validTime': datetime,
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -47,7 +48,8 @@ class HourlyResourceLocation(HourlyResource):
         'longitude': longitude,
         'series': [{
             'value': float,
-            'validTime': datetime_to_str
+            'validTime': datetime_to_str,
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -69,7 +71,8 @@ class HourlyTimeSeriesResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -88,7 +91,8 @@ class HourlyTimeSeriesResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -111,7 +115,8 @@ class HourlyAccumulationResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -131,7 +136,8 @@ class HourlyAccumulationResourceAsset(HourlyResource):
                 'mean': float,
                 'minimum': float,
                 'maximum': float
-            }
+            },
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
