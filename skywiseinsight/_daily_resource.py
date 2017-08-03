@@ -38,7 +38,7 @@ class DailyResourceLocation(DailyResource):
         'series': [{
             'value': float,
             'validDate': date,
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
 
         }]
     })
@@ -49,7 +49,7 @@ class DailyResourceLocation(DailyResource):
         'series': [{
             'value': float,
             'validDate': date_to_str,
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -68,7 +68,7 @@ class DailyResourceAsset(DailyResource):
                 'minimum': float,
                 'maximum': float
             },
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -84,7 +84,7 @@ class DailyResourceAsset(DailyResource):
                 'minimum': float,
                 'maximum': float
             },
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 

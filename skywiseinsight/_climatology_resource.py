@@ -1,4 +1,4 @@
-from voluptuous import Any
+from voluptuous import Any, Optional
 from ._daily_resource import (DailyResourceLocation,
                               DailyResourceAsset,
                               DailyResourceContours)
@@ -12,7 +12,7 @@ class ClimatologyResourceLocation(DailyResourceLocation):
         'series': [{
             'value': float,
             'validDate': Any(str, unicode),
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -22,7 +22,7 @@ class ClimatologyResourceLocation(DailyResourceLocation):
         'series': [{
             'value': float,
             'validDate': Any(str, unicode),
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -47,7 +47,7 @@ class ClimatologyResourceAsset(DailyResourceAsset):
                 'minimum': float,
                 'maximum': float
             },
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
@@ -63,7 +63,7 @@ class ClimatologyResourceAsset(DailyResourceAsset):
                 'minimum': float,
                 'maximum': float
             },
-            'products': [unicode]
+            Optional('products'): [Any(str, unicode)]
         }]
     })
 
