@@ -42,17 +42,17 @@ class _DailyClimatologicalLowTemperatureByAsset(ClimatologyResourceAsset):
 
     _deserialize = ClimatologyResourceAsset._deserialize.extend({
         'timeSeriesStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 
     _serialize = ClimatologyResourceAsset._serialize.extend({
         'timeSeriesStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 

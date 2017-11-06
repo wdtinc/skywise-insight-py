@@ -36,7 +36,7 @@ class DailyResourceLocation(DailyResource):
         'latitude': latitude,
         'longitude': longitude,
         'series': [{
-            'value': float,
+            'value': Any(float, None),
             'validDate': date,
             Optional('products'): [Any(str, unicode)]
 
@@ -47,7 +47,7 @@ class DailyResourceLocation(DailyResource):
         'latitude': latitude,
         'longitude': longitude,
         'series': [{
-            'value': float,
+            'value': Any(float, None),
             'validDate': date_to_str,
             Optional('products'): [Any(str, unicode)]
         }]
@@ -61,12 +61,12 @@ class DailyResourceAsset(DailyResource):
         Optional('contours'): unicode,
         'series': [{
             'validDate': date,
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]
@@ -77,12 +77,12 @@ class DailyResourceAsset(DailyResource):
         'contours': unicode,
         'series': [{
             'validDate': date_to_str,
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]
@@ -93,17 +93,17 @@ class DailyTimeSeriesResourceAsset(DailyResourceAsset):
 
     _deserialize = DailyResourceAsset._deserialize.extend({
         'timeSeriesStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 
     _serialize = DailyResourceAsset._serialize.extend({
         'timeSeriesStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 
@@ -112,17 +112,17 @@ class DailyAccumulationResourceAsset(DailyResourceAsset):
 
     _deserialize = DailyResourceAsset._deserialize.extend({
         'accumulationStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 
     _serialize = DailyResourceAsset._serialize.extend({
         'accumulationStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 

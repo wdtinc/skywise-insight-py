@@ -10,7 +10,7 @@ class ClimatologyResourceLocation(DailyResourceLocation):
         'startDate': Any(str, unicode),
         'endDate': Any(str, unicode),
         'series': [{
-            'value': float,
+            'value': Any(float, None),
             'validDate': Any(str, unicode),
             Optional('products'): [Any(str, unicode)]
         }]
@@ -20,7 +20,7 @@ class ClimatologyResourceLocation(DailyResourceLocation):
         'startDate': Any(str, unicode),
         'endDate': Any(str, unicode),
         'series': [{
-            'value': float,
+            'value': Any(float, None),
             'validDate': Any(str, unicode),
             Optional('products'): [Any(str, unicode)]
         }]
@@ -40,12 +40,12 @@ class ClimatologyResourceAsset(DailyResourceAsset):
         'endDate': Any(str, unicode),
         'series': [{
             'validDate': Any(str, unicode),
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]
@@ -56,12 +56,12 @@ class ClimatologyResourceAsset(DailyResourceAsset):
         'endDate': Any(str, unicode),
         'series': [{
             'validDate': Any(str, unicode),
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]

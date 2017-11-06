@@ -37,7 +37,7 @@ class HourlyResourceLocation(HourlyResource):
         'latitude': latitude,
         'longitude': longitude,
         'series': [{
-            'value': float,
+            'value': Any(float, None),
             'validTime': datetime,
             Optional('products'): [Any(str, unicode)]
         }]
@@ -47,7 +47,7 @@ class HourlyResourceLocation(HourlyResource):
         'latitude': latitude,
         'longitude': longitude,
         'series': [{
-            'value': float,
+            'value': Any(float, None),
             'validTime': datetime_to_str,
             Optional('products'): [Any(str, unicode)]
         }]
@@ -59,18 +59,18 @@ class HourlyTimeSeriesResourceAsset(HourlyResource):
     _deserialize = HourlyResource._deserialize.extend({
         'asset': unicode,
         'timeSeriesStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         },
         'series': [{
             'validTime': datetime,
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]
@@ -79,18 +79,18 @@ class HourlyTimeSeriesResourceAsset(HourlyResource):
     _serialize = HourlyResource._serialize.extend({
         'asset': unicode,
         'timeSeriesStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         },
         'series': [{
             'validTime': datetime_to_str,
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]
@@ -103,18 +103,18 @@ class HourlyAccumulationResourceAsset(HourlyResource):
         'asset': unicode,
         'contours': unicode,
         'accumulationStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         },
         'series': [{
             'validTime': datetime,
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]
@@ -124,18 +124,18 @@ class HourlyAccumulationResourceAsset(HourlyResource):
         'asset': unicode,
         'contours': unicode,
         'accumulationStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         },
         'series': [{
             'validTime': datetime_to_str,
-            'value': float,
+            'value': Any(float, None),
             'contours': unicode,
             'assetStatistics': {
-                'mean': float,
-                'minimum': float,
-                'maximum': float
+                'mean': Any(float, None),
+                'minimum': Any(float, None),
+                'maximum': Any(float, None)
             },
             Optional('products'): [Any(str, unicode)]
         }]

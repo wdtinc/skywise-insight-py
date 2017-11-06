@@ -42,17 +42,17 @@ class _DailyClimatologicalPrecipitationByAsset(ClimatologyResourceAsset):
 
     _deserialize = ClimatologyResourceAsset._deserialize.extend({
         'accumulationStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 
     _serialize = ClimatologyResourceAsset._serialize.extend({
         'accumulationStatistics': {
-            'mean': float,
-            'minimum': float,
-            'maximum': float
+            'mean': Any(float, None),
+            'minimum': Any(float, None),
+            'maximum': Any(float, None)
         }
     })
 
